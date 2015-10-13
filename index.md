@@ -7,4 +7,4 @@ permalink: index.html
 
 ## ITMO 7th semester
 
-  * [Networks](7sem/networks/index.html)
+  * [Networks](/itmo-7sem-networks)
