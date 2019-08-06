@@ -8,7 +8,7 @@
     <h1>Part I</h1>
 
     <section>
-      First demo show launch of load test experiment with manual launch of every node.
+      First demo shows launch of load test experiment with manual launch of every node.
 
       <br>
 
@@ -29,10 +29,12 @@
 
       Each of 5 submitters generates a constant flow of 2500 transactions per second.
       <br>
+      <br>
       Regular node with signature verification lags behind for the reason that it's impossible
       to verify more than ~8000 transactions per second on a single thread. If we would launch
       signature verfiers for regular node as well, it would remove the lag-behind effect.
 
+      <br>
       <br>
       At the end of experiment some of submitters end up 3-7 seconds earlier than others thus
       for a few last blocks we observe 5000 transactions per block. This degradation happens
@@ -48,6 +50,103 @@
       <input type="range" id="speed-part1" min=5 max=55 value=30></input>
       <br>
       Current speed: <span id="speed-cur-part1">1.0x</div>
+    </span>
+  </div>
+  <div>
+    <h1>Part II</h1>
+
+    <section>
+      This is a short demo which shows use of load test tool `ltt` to measure performance
+      of the node locally.
+      <br>
+      Experiment is launched for 30 seconds with 5 submitters each producing 3600tps.
+    </section>
+    
+    <h2>Player</h2>
+
+    <asciinema-player src="part2.cast" id="ascii-part2">
+    </asciinema-player>
+    <span> Speed control (from 0.5x to 5.5x) :
+      <input type="range" id="speed-part2" min=5 max=55 value=10></input>
+      <br>
+      Current speed: <span id="speed-cur-part2">1.0x</div>
+    </span>
+  </div>
+  <div>
+    <h1>Part III</h1>
+
+    <section>
+      This is a short demo which shows use of load test tool `ltt` to measure performance
+      of the node locally.
+      <br>
+      Experiment is launched for 30 seconds with 5 submitters each producing 2000tps of
+      regular transaction flow and 100 tps of payment channel commitment transactions.
+
+      <br> 
+      <br>
+
+      After commitment, each payment channel is active for 4s and handles 11
+      microtransactions internally. Activity on payment channels is emulated
+      by creating, signing and sending microtransactions from submitter with index <i>i</i>
+      to submitter with index <i>i+1</i> (where <i>i</i> is the index of a submitter
+      that created a commitment transaction for the channel).
+
+      <br>
+      <br>
+
+      Note that due to payment channels, 100 commitment transactions per second per submitter
+      result into additional 4650 tps as a result of the experiment.
+    </section>
+    
+    <h2>Player</h2>
+
+    <asciinema-player src="part3.cast" id="ascii-part3">
+    </asciinema-player>
+    <span> Speed control (from 0.5x to 5.5x) :
+      <input type="range" id="speed-part3" min=5 max=55 value=10></input>
+      <br>
+      Current speed: <span id="speed-cur-part3">1.0x</div>
+    </span>
+  </div>
+  <div>
+    <h1>Part IV</h1>
+
+    <section>
+      This is a short demo which shows use of load test tool `ltt` to measure performance
+      of the node locally.
+      <br>
+      Experiment is launched for 30 seconds with 5 submitters each producing 
+      100 tps of payment channel commitment transactions.
+
+      <br> 
+      <br>
+
+      After commitment, each payment channel is active for 4s and handles 100
+      microtransactions internally. Activity on payment channels is emulated
+      by creating, signing and sending microtransactions from submitter with index <i>i</i>
+      to submitter with index <i>i+1</i> (where <i>i</i> is the index of a submitter
+      that created a commitment transaction for the channel).
+
+      <br>
+      <br>
+      Note that due to payment channels, 100 commitment transactions per second per submitter
+      result into additional 46353 tps total. This is just slightly less than target
+      50000 tps.
+      <br>
+      <br>
+      Note that the bottleneck here is how much microtransactions submitters are able to handle,
+      node can surely handle 9000 commitment/withdrawal transactions per second which is evidenced
+      by Part I and Part II.
+    </section>
+    
+    <h2>Player</h2>
+
+    <asciinema-player src="part4.cast" id="ascii-part4">
+    </asciinema-player>
+    <span> Speed control (from 0.5x to 5.5x) :
+      <input type="range" id="speed-part4" min=5 max=55 value=10></input>
+      <br>
+      Current speed: <span id="speed-cur-part4">1.0x</div>
     </span>
   </div>
 
@@ -100,12 +199,17 @@
             })
       }
 
-      if (rate) setRate(rate);
+      if (rate) {
+        setRate(rate);
+      }
 
       ascii.addEventListener('play', onPlayHandler)
       ascii.addEventListener('pause', onPauseHandler)
     }
     enableStart("part1", 3)
+    enableStart("part2")
+    enableStart("part3")
+    enableStart("part4")
   </script>
 </body>
 </html>
