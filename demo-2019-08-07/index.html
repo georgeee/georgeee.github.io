@@ -5,7 +5,42 @@
 </head>
 <body>
   <div>
-    <h3>Part I</h3>
+    <h1>Part I</h1>
+
+    <section>
+      First demo show launch of load test experiment with manual launch of every node.
+
+      <br>
+
+      All nodes are launched within a single tmux window:
+
+      <ul>
+        <li>central (left) pane: master node</li>
+        <li>right-top pane: regular node with signature verification off</li>
+        <li>right-bottom pane: regular node with signature verification on</li>
+        <li>bottom-left pane: submitter nodes (5 nodes in single pane)</li>
+        <li>bottom-right pane: signature verifier nodes (16 nodes in single pane)</li>
+      </ul>
+
+      During experiment nodes log recently applied blocks with amount of txs in the block.
+      Block is created once per second and amount of txs per block is averages at 12500.
+
+      <br>
+
+      Each of 5 submitters generates a constant flow of 2500 transactions per second.
+      <br>
+      Regular node with signature verification lags behind for the reason that it's impossible
+      to verify more than ~8000 transactions per second on a single thread. If we would launch
+      signature verfiers for regular node as well, it would remove the lag-behind effect.
+
+      <br>
+      At the end of experiment some of submitters end up 3-7 seconds earlier than others thus
+      for a few last blocks we observe 5000 transactions per block. This degradation happens
+      immediately which is an evidence that master node processed all the transactions immediately
+      (without visible delay) and didn't accumulate any transactions in a buffer.
+    </section>
+    
+    <h2>Player</h2>
 
     <asciinema-player src="part1.cast" id="ascii-part1">
     </asciinema-player>
