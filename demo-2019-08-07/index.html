@@ -45,15 +45,16 @@
     <asciinema-player src="part1.cast" id="ascii-part1">
     </asciinema-player>
     <span> Speed control (from 0.5x to 5.5x) :
-      <input type="range" id="speed-part1" min=5 max=55 value=10></input>
+      <input type="range" id="speed-part1" min=5 max=55 value=30></input>
       <br>
       Current speed: <span id="speed-cur-part1">1.0x</div>
     </span>
   </div>
 
 
+  <script src="asciinema-player.js"></script>
   <script>
-    function enableStart(name) {
+    function enableStart(name, rate) {
       var audio = document.getElementById("audio-" + name);
       var ascii = document.getElementById("ascii-" + name);
       var player;
@@ -73,14 +74,21 @@
         }
       }
 
+      var speed = document.getElementById("speed-" + name);
+      var speedCur = document.getElementById("speed-cur-" + name);
       function setRate(rate) {
+        console.log("setting speed " + rate + "x");
+        speedCur.innerHTML = rate + "x";
         var time = player ? player.getCurrentTime() : ascii.currentTime;
         asciinema.player.js.UnmountPlayer(ascii);
         if(audio)
           audio.playbackRate = rate;
         create(time, rate);
       }
-
+      speed.addEventListener('change', function(e) {
+        var sp = this.valueAsNumber / 10;
+        setRate(sp);
+      })
       function create(time, rate) {
         console.log("Creating with start " + time + " and rate " + rate)
         player = asciinema.player.js.CreatePlayer(ascii, name + ".cast",
@@ -91,20 +99,13 @@
             , onPause: onPauseHandler
             })
       }
-      var speed = document.getElementById("speed-" + name);
-      var speedCur = document.getElementById("speed-cur-" + name);
-      speed.addEventListener('change', function(e) {
-        var sp = this.valueAsNumber / 10;
-        console.log("setting speed " + sp + "x");
-        speedCur.innerHTML = sp + "x";
-        setRate(sp);
-      })
+
+      if (rate) setRate(rate);
 
       ascii.addEventListener('play', onPlayHandler)
       ascii.addEventListener('pause', onPauseHandler)
     }
-    enableStart("part1")
+    enableStart("part1", 3)
   </script>
-  <script src="asciinema-player.js"></script>
 </body>
 </html>
