@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-bundle exec jekyll build
+JEKYLL_ENV=production bundle exec jekyll build
 
 
 cp -R _site/* ../georgeee.github.io/
