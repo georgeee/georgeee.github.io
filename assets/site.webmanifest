@@ -4,7 +4,7 @@
   "short_name": "George Agapov",
   "description": "George Agapov’s personal page. Blog, photos, projects and funny things.",
   "start_url": "/?utm_source=homescreen",
-  "theme_color": "rgb(8,46,57)",
+  "theme_color": "rgb(0,189,255)",
   "background_color": "#fff",
   "orientation": "portrait",
   "display": "minimal-ui",
