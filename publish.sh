@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# export JEKYLL_ENV=production
+export JEKYLL_ENV=production
 bundle exec jekyll build
 
 
