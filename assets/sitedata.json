@@ -83,6 +83,17 @@
       
       "collection": "posts",
       "url": "/blog/work/2019-06-14-parsing-typed-edsl/"
+    },{
+      
+      "title": "Work",
+      "date": "2021-11-27 16:22:34 +0300",
+      "description": "Guest posts I wrote while working on different projects.\n",
+      "content": "\n",
+      "categories": [],
+      "tags": [],
+      
+      "collection": "featured_categories",
+      "url": "/blog/work/"
     }
   ]
 }
