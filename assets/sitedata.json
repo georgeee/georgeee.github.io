@@ -25,7 +25,7 @@
       
       "title": "Welcome",
       
-      "content": "Hi! My name is George. I am a software engineer, project manager and financial market enthusiast from Russia.\n\nWelcome to my homepage! You can find something interesting to read in my Blog.\n\nAbout me\n\nI hold Master’s degree in Computer Science from ITMO University, one of the leading Russian CS school. After graduating I also taught Haskell there and I highly recommend our course.\nI have experience and knowledge in many areas of Computer Science, most notably in Distributed systems and Functional programming.\n\nOver my professional career I was working on podcast website, brokerage software, co-founded and PMed a SaaS startup. Last few years I was working in Blockchain space and among other things I took a pivotal role in launching Cardano blockchain mainnet, developing coinswap engine StakerBridge and Morley toolkit for\ndeveloping Tezos contracts.\n\nCurrently I’m at O(1) labs, working on networking stack of Mina Protocol, which I find one of the most exciting blockchain technologies.\n\nI live in Saint Petersburg, Russia with my lovely wife Ekaterina and a newborn son Yakov. We are digital nomads in spirit and travel a lot. In my free time I love listening classical music, studying Economics and Finance, practicing my German and reading Proust.\n\n",
+      "content": "Hi! My name is George. I am a software engineer, project manager and financial market enthusiast.\n\nWelcome to my homepage! You can find something interesting to read in my Blog.\n\nAbout me\n\nI hold Master’s degree in Computer Science from ITMO University, one of the leading Russian CS school. After graduating I also taught Haskell there and I highly recommend our course.\nI have experience and knowledge in many areas of Computer Science, most notably in Distributed systems and Functional programming.\n\nOver my professional career I was working on podcast website, brokerage software, co-founded and PMed a SaaS startup. Last few years I was working in Blockchain space and among other things I took a pivotal role in launching Cardano blockchain mainnet, developing coinswap engine StakerBridge and Morley toolkit for\ndeveloping Tezos contracts.\n\nCurrently I’m at O(1) labs, working on networking stack of Mina Protocol, which I find one of the most exciting blockchain technologies.\n\nI live in Andorra with my lovely wife Ekaterina and a newborn son Yakov. In my free time I love hiking, listening classical music, studying Cryptography, Economics and Finance, practicing my German and reading Proust.\n\n",
       "url": "/"
     },{
       
@@ -75,7 +75,7 @@
     {
       
       "title": "Parsing typed eDSL",
-      "date": "2019-06-14 00:00:00 +0300",
+      "date": "2019-06-14 00:00:00 +0200",
       
       "content": "In a post at Serokell’s blog I cover my journey in\nturning a typed stack-based programming language Michelson to embedded DSL in Haskell. Tricky part is\nparsing language from text and returning a well-typed representation of a program.\n\nBeyond blog post\n\nYou can check my lectures on advanced typing in Haskell:\n\n\n  Brand new DSL world\n  Some fun with kinds\n\n\nIdeas I described in this blog post were taken further to develop Indigo, a more-or-less conventionally looking embedded programming language that is compiled to stack language as in blog post by further exploiting possibilities of Haskell’s rich type system.\n",
       "categories": ["work"],
@@ -86,7 +86,7 @@
     },{
       
       "title": "Work",
-      "date": "2021-11-27 16:22:34 +0300",
+      "date": "2022-05-20 15:44:08 +0200",
       "description": "Guest posts I wrote while working on different projects.\n",
       "content": "\n",
       "categories": [],
