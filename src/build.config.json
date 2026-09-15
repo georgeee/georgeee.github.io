@@ -73,13 +73,13 @@
     },
     {
       "hash": "work",
-      "route": "/work/",
+      "route": "/work",
       "title": "Work — George Agapov",
       "description": "Selected work, most recent first: technical architecture at o1Labs and five years on the Mina protocol, the Molt Petit consensus protocol, Yak Software, StakerBridge, Tezos tooling, Cardano SL and teaching — the longer arc behind georgeee.com."
     },
     {
       "hash": "about",
-      "route": "/about/",
+      "route": "/about",
       "title": "About — George Agapov",
       "description": "About George Agapov: life in Andorra, in the Pyrenees — trails, classical music, Proust and Catalan — with direct contacts on email, GitHub, LinkedIn, X and Telegram."
     }
