@@ -1,0 +1,87 @@
+{
+  "name": "georgeee",
+  "domain": "https://georgeee.com",
+  "siteDir": "..",
+  "outDir": "..",
+  "sourcePage": "index.html",
+  "copyFromSite": [
+    "assets",
+    "CNAME",
+    ".nojekyll"
+  ],
+  "copyExclude": [
+    "vendor"
+  ],
+  "src": {
+    "page": "index.dc.html"
+  },
+  "og": {
+    "og:type": "website",
+    "og:site_name": "georgeee.com",
+    "og:image": "https://georgeee.com/assets/og-georgeee.jpg",
+    "og:image:width": "1200",
+    "og:image:height": "630"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@just_georgeee",
+    "twitter:image": "https://georgeee.com/assets/og-georgeee.jpg"
+  },
+  "hashRedirect": true,
+  "notFound": {
+    "title": "Page not found — George Agapov",
+    "basedOn": "home",
+    "bodyHtml": "<div style=\"padding:14vh 0 18vh\"><h1 style=\"font:300 clamp(32px,4.2vw,50px)/1.1 'Newsreader',serif;letter-spacing:-.02em\">Page not found</h1><p style=\"margin-top:16px;max-width:38em;font-size:18px\">This address doesn't match anything on the site. Everything here lives on three pages, and the header above will take you to any of them.</p><p style=\"margin:22px 0 0\"><a href=\"/\" style=\"font:400 14px/1 'IBM Plex Mono',monospace\">georgeee.com →</a></p></div>"
+  },
+  "screens": [
+    {
+      "hash": "home",
+      "route": "/",
+      "hashRedirect": true,
+      "title": "George Agapov — Technical architect and engineering leader",
+      "description": "George Agapov is a technical architect and engineering leader based in Andorra, working on distributed systems, high-assurance software, AI-assisted engineering and independent products and research through Yak Software.",
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "George Agapov",
+        "url": "https://georgeee.com/",
+        "image": "https://georgeee.com/assets/og-georgeee.jpg",
+        "jobTitle": "Technical architect and engineering leader",
+        "email": "mailto:george.agapov@gmail.com",
+        "worksFor": [
+          {
+            "@type": "Organization",
+            "name": "o1Labs"
+          },
+          {
+            "@type": "Organization",
+            "name": "Yak Software",
+            "url": "https://yak.ad/"
+          }
+        ],
+        "homeLocation": {
+          "@type": "Place",
+          "name": "Andorra"
+        },
+        "sameAs": [
+          "https://github.com/georgeee",
+          "https://www.linkedin.com/in/george-agapov-04817b83/",
+          "https://x.com/just_georgeee",
+          "https://t.me/george_agapov"
+        ]
+      }
+    },
+    {
+      "hash": "work",
+      "route": "/work/",
+      "title": "Work — George Agapov",
+      "description": "Selected work, most recent first: technical architecture at o1Labs and five years on the Mina protocol, the Molt Petit consensus protocol, Yak Software, StakerBridge, Tezos tooling, Cardano SL and teaching — the longer arc behind georgeee.com."
+    },
+    {
+      "hash": "about",
+      "route": "/about/",
+      "title": "About — George Agapov",
+      "description": "About George Agapov: life in Andorra, in the Pyrenees — trails, classical music, Proust and Catalan — with direct contacts on email, GitHub, LinkedIn, X and Telegram."
+    }
+  ]
+}

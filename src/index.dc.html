@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="assets/georgeee-favicon.svg">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics=""><title>George Agapov — Technical architect and engineering leader</title><meta name="description" content="George Agapov is a technical architect and engineering leader based in Andorra, working on distributed systems, high-assurance software, AI-assisted engineering and independent products and research through Yak Software."><link rel="canonical" href="https://georgeee.com/"><link rel="icon" type="image/svg+xml" href="assets/georgeee-favicon.svg"><meta property="og:type" content="website"><meta property="og:site_name" content="georgeee.com"><meta property="og:title" content="George Agapov — Technical architect and engineering leader"><meta property="og:description" content="Technical architect and engineering leader in Andorra: distributed systems, high-assurance software, AI-assisted engineering, and independent products and research through Yak Software."><meta property="og:url" content="https://georgeee.com/"><meta property="og:image" content="https://georgeee.com/assets/og-georgeee.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@just_georgeee"><meta name="twitter:title" content="George Agapov — Technical architect and engineering leader"><meta name="twitter:description" content="Technical architect and engineering leader in Andorra: distributed systems, high-assurance software, AI-assisted engineering, and independent products and research through Yak Software."><meta name="twitter:image" content="https://georgeee.com/assets/og-georgeee.jpg"><link rel="stylesheet" href="assets/fonts/fonts.css"><style>html,body{margin:0;padding:0;background:#edf0ef;color:#1e252b;-webkit-font-smoothing:antialiased}body{font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:17px;line-height:1.6}a{color:#1f7686;text-decoration:none;border-bottom:1px solid #b9d3d7;transition:color .15s,border-color .15s}a:hover{color:#14525e;border-bottom-color:#14525e}p{margin:0 0 1em;text-wrap:pretty}h1,h2,h3{margin:0;font-weight:400;text-wrap:pretty}img{display:block}nav a[aria-current="page"]{color:#1e252b!important;border-bottom-color:#1e252b!important}@media (max-width:920px){.three{grid-template-columns:1fr!important}}@media (max-width:760px){.cols{grid-template-columns:1fr!important}.two{flex-direction:column!important;align-items:stretch!important}.two figure{max-width:none!important;width:100%!important}}@media (max-width:520px){.hdr{flex-direction:column!important;align-items:flex-start!important;gap:12px!important}.ftr{flex-direction:column!important;gap:14px!important}}</style></helmet>
+<div style="min-height:100vh;display:flex;flex-direction:column;background:#edf0ef">
+<header class="hdr" style="display:flex;justify-content:space-between;align-items:baseline;gap:20px;flex-wrap:wrap;padding:26px min(6vw,64px) 0;max-width:1080px;width:100%;box-sizing:border-box;margin:0 auto">
+<a href="#home" onClick="{{ goHome }}" style="font:400 22px/1 'Newsreader',serif;letter-spacing:-.01em;color:#1e252b;border:0">George Agapov</a>
+<nav style="display:flex;gap:24px;align-items:baseline;font:400 15px/1 'IBM Plex Mono',monospace">
+<a href="#work" onClick="{{ goWork }}" aria-current="{{ workCurrent }}" style="color:#5a656d;border:0;padding-bottom:3px;border-bottom:1px solid transparent" style-hover="color:#1f7686">Work</a>
+<a href="#about" onClick="{{ goAbout }}" aria-current="{{ aboutCurrent }}" style="color:#5a656d;border:0;padding-bottom:3px;border-bottom:1px solid transparent" style-hover="color:#1f7686">About</a>
+</nav>
+</header>
+
+<main style="flex:1;width:100%;max-width:1080px;box-sizing:border-box;margin:0 auto;padding:0 min(6vw,64px)">
+
+<sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+<section data-screen-label="Home" class="two" style="display:flex;flex-wrap:wrap;gap:40px clamp(32px,6vw,80px);align-items:flex-end;padding:8vh 0 7vh">
+<div style="flex:1 1 380px;min-width:0">
+<div style="font:400 14px/1.5 'IBM Plex Mono',monospace;color:#5a656d">Technical architect and leader · Andorra</div>
+<h1 style="font:300 clamp(32px,4.4vw,54px)/1.1 'Newsreader',serif;letter-spacing:-.02em;margin-top:18px;max-width:15em">I build software where correctness matters, and I lead the teams that build it.</h1>
+<div style="margin-top:26px;max-width:38em;font-size:18px">
+<p>I've spent more than a decade building distributed systems, protocols and other software where mistakes can be expensive. My work has ranged from writing the implementation to architecture and the technical leadership of several engineering teams.</p>
+<p style="margin:0">Today I'm Technical Architect at o1Labs, through Yak Software, and I also build my own products and research through Yak. Recently I've been spending a lot of time on what AI changes about software engineering, particularly when the result still needs strong guarantees.</p>
+</div>
+</div>
+<figure style="margin:0;min-width:0;flex:1 1 280px;max-width:400px"><img src="assets/george-portrait.jpg" alt="George Agapov, portrait on the coast at Étretat" style="width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;border-radius:3px;filter:{{ photoFilter }}"><figcaption style="margin-top:10px;font:400 13px/1.5 'IBM Plex Mono',monospace;color:#5a656d">Étretat, France</figcaption></figure>
+</section>
+
+<section style="padding:0 0 8vh">
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:6px 16px;flex-wrap:wrap;border-top:1px solid #1e252b;padding-top:10px"><h2 style="font:400 13px/1 'IBM Plex Mono',monospace;color:#5a656d;letter-spacing:.04em">NOW</h2><span style="font:400 13px/1 'IBM Plex Mono',monospace;color:#5a656d">2026</span></div>
+<div class="cols" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:28px 48px;margin-top:22px">
+<div style="min-width:0;max-width:38em"><div style="font:400 26px/1.2 'Newsreader',serif">o1Labs</div><p style="margin-top:8px"><strong style="font-weight:500">Technical Architect.</strong> o1Labs is a client of Yak Software. Through that engagement I work on the technical architecture of o1Labs products and projects, and consult on execution and delivery across several engineering teams.</p><p style="margin:0">Earlier, I spent five years working directly on Mina, including a re-architecture of its networking layer and the automated, cluster-scale stress testing used for core releases.</p></div>
+<div style="min-width:0;max-width:38em"><div style="font:400 26px/1.2 'Newsreader',serif">Yak Software</div><p style="margin-top:8px"><strong style="font-weight:500">Founder.</strong> Yak Software is my independent engineering and research company in Andorra. It is where I develop my own products and research: Diane, agent-cage and Molt Petit. On top of Molt Petit I am designing a financial integrity layer — records that stay correct even when the systems around them are compromised.</p><a href="https://yak.ad" style="font:400 14px/1 'IBM Plex Mono',monospace">yak.ad →</a></div>
+</div>
+</section>
+
+<section style="padding:0 0 8vh">
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:6px 16px;flex-wrap:wrap;border-top:1px solid #1e252b;padding-top:10px"><h2 style="font:400 13px/1 'IBM Plex Mono',monospace;color:#5a656d;letter-spacing:.04em">SELECTED WORK</h2><a href="#work" onClick="{{ goWork }}" style="font:400 13px/1 'IBM Plex Mono',monospace;border:0">all work →</a></div>
+<p style="margin:14px 0 0;max-width:38em;color:#5a656d">A few things I've built or led that still explain how I work today.</p>
+<div style="margin-top:10px">
+<a href="https://yak.ad/agent-cage" style="display:flex;flex-wrap:wrap;gap:4px 24px;padding:18px 0;border-bottom:1px solid #cfd6d8;color:#1e252b" style-hover="color:#1e252b"><span style="flex:0 0 9ch;font:400 13px/1.7 'IBM Plex Mono',monospace;color:#5a656d">2026</span><span style="flex:1 1 240px;min-width:0;max-width:40em"><span style="font:400 22px/1.25 'Newsreader',serif">agent-cage</span><span style="display:block;margin-top:4px;color:#3e474e;font-size:16px">Run AI coding agents unattended on your own servers without giving the code they execute access to all of your credentials. The system separates the agent, executor and privileged components using ordinary Unix security boundaries.</span><span style="display:block;margin-top:6px;font:500 13px/1.6 'IBM Plex Mono',monospace;color:#1e252b">Public release 1 October.</span></span></a>
+<a href="https://yak.ad/molt-petit" style="display:flex;flex-wrap:wrap;gap:4px 24px;padding:18px 0;border-bottom:1px solid #cfd6d8;color:#1e252b" style-hover="color:#1e252b"><span style="flex:0 0 9ch;font:400 13px/1.7 'IBM Plex Mono',monospace;color:#5a656d">2026</span><span style="flex:1 1 240px;min-width:0;max-width:40em"><span style="font:400 22px/1.25 'Newsreader',serif">Molt Petit</span><span style="display:block;margin-top:4px;color:#3e474e;font-size:16px">A research paper, in draft. A consensus protocol simple enough to explain in a minute, with deterministic fast finality — and a thorough treatment of what goes wrong with keys in practice. A rotated key, a stolen key and a key briefly in the wrong hands are three different events; the protocol handles each gracefully. Its safety is a machine-checked theorem.</span></span></a>
+<a href="#work" onClick="{{ goWork }}" style="display:flex;flex-wrap:wrap;gap:4px 24px;padding:18px 0;border-bottom:1px solid #cfd6d8;color:#1e252b" style-hover="color:#1e252b"><span style="flex:0 0 9ch;font:400 13px/1.7 'IBM Plex Mono',monospace;color:#5a656d">2021 –</span><span style="flex:1 1 240px;min-width:0;max-width:40em"><span style="font:400 22px/1.25 'Newsreader',serif">Mina protocol</span><span style="display:block;margin-top:4px;color:#3e474e;font-size:16px">Five years of protocol engineering at o1Labs: re-architecting networking, introducing automated cluster-scale release testing, and later taking on broader technical leadership.</span></span></a>
+<a href="#work" onClick="{{ goWork }}" style="display:flex;flex-wrap:wrap;gap:4px 24px;padding:18px 0;border-bottom:1px solid #cfd6d8;color:#1e252b" style-hover="color:#1e252b"><span style="flex:0 0 9ch;font:400 13px/1.7 'IBM Plex Mono',monospace;color:#5a656d">2019 – 21</span><span style="flex:1 1 240px;min-width:0;max-width:40em"><span style="font:400 22px/1.25 'Newsreader',serif">StakerBridge</span><span style="display:block;margin-top:4px;color:#3e474e;font-size:16px">Chief architect and technical lead for a token bridge across Algorand, Ethereum and Tezos, built around a custom DoS-resilient version of the usual cross-chain swap protocol.</span></span></a>
+<a href="#work" onClick="{{ goWork }}" style="display:flex;flex-wrap:wrap;gap:4px 24px;padding:18px 0;border-bottom:1px solid #cfd6d8;color:#1e252b" style-hover="color:#1e252b"><span style="flex:0 0 9ch;font:400 13px/1.7 'IBM Plex Mono',monospace;color:#5a656d">2019 – 20</span><span style="flex:1 1 240px;min-width:0;max-width:40em"><span style="font:400 22px/1.25 'Newsreader',serif">Pont.ee</span><span style="display:block;margin-top:4px;color:#3e474e;font-size:16px">Co-founder of a small SaaS startup, and its project manager rather than its engineer: product definition, planning and delivery to launch.</span></span></a>
+<a href="#work" onClick="{{ goWork }}" style="display:flex;flex-wrap:wrap;gap:4px 24px;padding:18px 0;border-bottom:1px solid #cfd6d8;color:#1e252b" style-hover="color:#1e252b"><span style="flex:0 0 9ch;font:400 13px/1.7 'IBM Plex Mono',monospace;color:#5a656d">2016 – 18</span><span style="flex:1 1 240px;min-width:0;max-width:40em"><span style="font:400 22px/1.25 'Newsreader',serif">Cardano SL</span><span style="display:block;margin-top:4px;color:#3e474e;font-size:16px">Led the team that implemented Cardano SL from inception through its mainnet launch. I was responsible for most of the development, quality and delivery across the ledger, consensus and networking work.</span></span></a>
+</div>
+</section>
+
+<section style="padding:0 0 8vh">
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:6px 16px;flex-wrap:wrap;border-top:1px solid #1e252b;padding-top:10px"><h2 style="font:400 13px/1 'IBM Plex Mono',monospace;color:#5a656d;letter-spacing:.04em">CODE</h2><span style="font:400 13px/1 'IBM Plex Mono',monospace;color:#5a656d">most days</span></div>
+<div style="margin-top:18px;max-width:38em">
+<p>I still write code on the systems I'm responsible for. Recent work has included Rust, Go, Kotlin, OCaml and Lean 4, plus a long tail I would have to look up.</p>
+<p style="margin:0">I move between implementation, architecture and technical leadership rather than treating them as separate jobs.</p>
+</div>
+</section>
+
+<sc-if value="{{ showThinking }}" hint-placeholder-val="{{ true }}">
+<section style="padding:0 0 10vh">
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:6px 16px;flex-wrap:wrap;border-top:1px solid #1e252b;padding-top:10px"><h2 style="font:400 13px/1 'IBM Plex Mono',monospace;color:#5a656d;letter-spacing:.04em">WHAT I'M THINKING ABOUT</h2></div>
+<div class="three" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px 40px;margin-top:22px;font-size:16px">
+<div style="min-width:0;max-width:38em"><h3 style="font:400 22px/1.25 'Newsreader',serif">Engineering when the code is generated</h3><p style="margin-top:10px">AI has made implementation dramatically faster. It also makes it easy to produce plausible code without understanding every failure mode.</p><p>I've therefore been moving more of my attention to what surrounds the implementation: writing down the properties that matter, isolating components so that mistakes stay local, and using checks that are independent of whoever produced the code — and that fail differently from one another, so a disagreement shows up rather than being averaged away.</p><p style="margin:0">A lot of my recent work, including agent-cage, was built this way.</p></div>
+<div style="min-width:0;max-width:38em"><h3 style="font:400 22px/1.25 'Newsreader',serif">Formal methods at AI speed</h3><p style="margin-top:10px">Formal verification has always had an economics problem: for most software, writing and maintaining proofs costs too much.</p><p>I think agents may change that. I've been using them to help construct proofs and iterate on formal specifications, while the trusted checker remains small and deterministic.</p><p style="margin:0">Molt Petit is my first substantial experiment in this direction. <a href="https://yak.ad/research">The thesis, at Yak →</a></p></div>
+<div style="min-width:0;max-width:38em"><h3 style="font:400 22px/1.25 'Newsreader',serif">The AI insider</h3><p style="margin-top:10px">Companies are about to run AI agents inside their own infrastructure: wide access, machine speed, and motives that are not fully legible and can be altered from outside. We learned, more or less, how to hire people without fearing them. With AI insiders that is still open.</p><p>The question I'm working on: how do you keep a company's most important records correct, and private, when something inside — with access to every server — may be wrong or turned?</p><a href="https://yak.ad/ledger" style="font:400 14px/1 'IBM Plex Mono',monospace">Ledger, at Yak →</a></div>
+</div>
+</section>
+</sc-if>
+</sc-if>
+
+<sc-if value="{{ isWork }}" hint-placeholder-val="{{ false }}">
+<section data-screen-label="Work" style="padding:8vh 0 10vh">
+<h1 style="font:300 clamp(32px,4.2vw,50px)/1.1 'Newsreader',serif;letter-spacing:-.02em">Work</h1>
+<p style="margin-top:16px;max-width:38em;font-size:18px">Selected, most recent first. Products and research in progress are described at <a href="https://yak.ad">yak.ad</a>; this page is the longer arc.</p>
+<div style="margin-top:36px">
+<article style="display:flex;flex-wrap:wrap;gap:6px 28px;padding:24px 0;border-top:1px solid #1e252b"><div style="flex:0 0 11ch;font:400 13px/1.7 'IBM Plex Mono',monospace;color:#5a656d">2021 – now</div><div style="flex:1 1 320px;min-width:0;max-width:38em"><h2 style="font:400 26px/1.2 'Newsreader',serif">o1Labs</h2><p style="margin-top:10px"><strong style="font-weight:500">Technical Architect.</strong> o1Labs is a client of Yak Software. Through that engagement I work on the technical architecture of o1Labs products and projects, and consult on execution and delivery across the engineering organisation.</p><p style="margin:0">Earlier, I spent five years working directly on Mina. I re-architected its networking layer around measured stability and performance work, and built the automated cluster-scale stress-testing process used before core releases.</p></div></article>
+<article style="display:flex;flex-wrap:wrap;gap:6px 28px;padding:24px 0;border-top:1px solid #cfd6d8"><div style="flex:0 0 11ch;font:400 13px/1.7 'IBM Plex Mono',monospace;color:#5a656d">2026</div><div style="flex:1 1 320px;min-width:0;max-width:38em"><h2 style="font:400 26px/1.2 'Newsreader',serif">Molt Petit <span style="color:#5a656d">· Yak Software</span></h2><p style="margin-top:10px">A research paper, in draft. A consensus protocol built to be small: a fixed roster, a round-robin slot schedule and one density rule in place of votes, quorum certificates and view change. A non-specialist can follow it in a minute; it finalises deterministically and fast, and a light client needs to hold almost nothing.</p><p>The depth is in the threat analysis. Rotating a key, having a key extracted, and someone holding a key for a while are three separate events with different consequences, and each has a defined path back to safety. The light-client safety results are proved in Lean 4 — about fifteen thousand lines — against the Rust implementation.</p><p style="margin:0">Much of the proof search and iteration was done with AI agents, which became part of the research question rather than merely a productivity tool. <a href="https://yak.ad/molt-petit">Preprint and artifact</a>.</p></div></article>
+<article style="display:flex;flex-wrap:wrap;gap:6px 28px;padding:24px 0;border-top:1px solid #cfd6d8"><div style="flex:0 0 11ch;font:400 13px/1.7 'IBM Plex Mono',monospace;color:#5a656d">now</div><div style="flex:1 1 320px;min-width:0;max-width:38em"><h2 style="font:400 26px/1.2 'Newsreader',serif">Yak Software <span style="color:#5a656d">· founder</span></h2><p style="margin-top:10px">My independent engineering and research company in Andorra.</p><p>Current work includes Diane, a dictation system built around several independent speech models and reconciliation between them; agent-cage, for running coding agents unattended without giving arbitrary executed code access to their credentials; Molt Petit; and Ledger, built on it — company records that stay correct and private even when an insider, human or AI, has access to every server.</p><a href="https://yak.ad" style="font:400 14px/1 'IBM Plex Mono',monospace">yak.ad →</a></div></article>
+<article style="display:flex;flex-wrap:wrap;gap:6px 28px;padding:24px 0;border-top:1px solid #cfd6d8"><div style="flex:0 0 11ch;font:400 13px/1.7 'IBM Plex Mono',monospace;color:#5a656d">2019 – 2021</div><div style="flex:1 1 320px;min-width:0;max-width:38em"><h2 style="font:400 26px/1.2 'Newsreader',serif">StakerDAO <span style="color:#5a656d">· Serokell</span></h2><p style="margin-top:10px">At Serokell I was technical lead and chief architect on three projects commissioned by StakerDAO, as well as the main technical contact with the client. I handled planning and architecture and wrote a substantial part of the Haskell implementation.</p><p style="margin:0">The last project, StakerBridge, launched in March 2021 and supported swaps between Algorand, Ethereum and Tezos using a custom DoS-resilient variant of the usual token-swap protocol.</p></div></article>
+<article style="display:flex;flex-wrap:wrap;gap:6px 28px;padding:24px 0;border-top:1px solid #cfd6d8"><div style="flex:0 0 11ch;font:400 13px/1.7 'IBM Plex Mono',monospace;color:#5a656d">2018 – 2019</div><div style="flex:1 1 320px;min-width:0;max-width:38em"><h2 style="font:400 26px/1.2 'Newsreader',serif">Tezos tooling in Haskell <span style="color:#5a656d">· Serokell</span></h2><p style="margin-top:10px">I led several blockchain projects in Haskell and OCaml.</p><p style="margin:0">Among them were Morley, a typed Haskell embedding of Tezos's Michelson, and Indigo, a more conventional language built on top of it. Much of the interesting work was in making Michelson's stack typing explicit enough that invalid programs could be rejected before they reached the chain.</p></div></article>
+<article style="display:flex;flex-wrap:wrap;gap:6px 28px;padding:24px 0;border-top:1px solid #cfd6d8"><div style="flex:0 0 11ch;font:400 13px/1.7 'IBM Plex Mono',monospace;color:#5a656d">2019 – 2020</div><div style="flex:1 1 320px;min-width:0;max-width:38em"><h2 style="font:400 26px/1.2 'Newsreader',serif">Pont.ee <span style="color:#5a656d">· Serokell</span></h2><p style="margin-top:10px">I co-founded Pont.ee, a SaaS product built from tooling that had originally been developed internally at Serokell, and ran it as project manager rather than engineer: product definition, planning, and delivery to launch in July 2020.</p></div></article>
+<article style="display:flex;flex-wrap:wrap;gap:6px 28px;padding:24px 0;border-top:1px solid #cfd6d8"><div style="flex:0 0 11ch;font:400 13px/1.7 'IBM Plex Mono',monospace;color:#5a656d">2016 – 2018</div><div style="flex:1 1 320px;min-width:0;max-width:38em"><h2 style="font:400 26px/1.2 'Newsreader',serif">Cardano SL <span style="color:#5a656d">· Serokell for IOHK</span></h2><p style="margin-top:10px">I led the team that implemented Cardano SL from inception through its mainnet launch in September 2017. I was responsible for most of the development, quality and delivery across the ledger, consensus and networking work.</p><p style="margin:0">Before that, I spent a few intense months helping finish the Haskell implementation of RSCoin against its deadline.</p></div></article>
+<article style="display:flex;flex-wrap:wrap;gap:6px 28px;padding:24px 0;border-top:1px solid #cfd6d8"><div style="flex:0 0 11ch;font:400 13px/1.7 'IBM Plex Mono',monospace;color:#5a656d">2018 – 2019</div><div style="flex:1 1 320px;min-width:0;max-width:38em"><h2 style="font:400 26px/1.2 'Newsreader',serif">Teaching <span style="color:#5a656d">· ITMO University</span></h2><p style="margin:10px 0 0">I taught ITMO's functional-programming course, from basic Haskell through advanced type-level techniques. I tried to keep the course focused on using those ideas to build real software rather than treating the type system as an end in itself.</p></div></article>
+<article style="display:flex;flex-wrap:wrap;gap:6px 28px;padding:24px 0;border-top:1px solid #cfd6d8;border-bottom:1px solid #cfd6d8"><div style="flex:0 0 11ch;font:400 13px/1.7 'IBM Plex Mono',monospace;color:#5a656d">2012 – 2016</div><div style="flex:1 1 320px;min-width:0;max-width:38em"><h2 style="font:400 26px/1.2 'Newsreader',serif">Earlier</h2><p style="margin-top:10px">At Devexperts I first worked on back-office software for a UK forex broker, including a substantial re-architecture, and later on a derivatives-trading platform used by thousands of people.</p><p style="margin:0">Before that I was lead developer of a podcast platform serving roughly ten thousand downloads a day.</p></div></article>
+</div>
+<div style="margin-top:44px;max-width:38em"><h2 style="font:400 13px/1 'IBM Plex Mono',monospace;color:#5a656d;letter-spacing:.04em">EDUCATION</h2><p style="margin-top:12px;font-size:16px">Master's and Bachelor's degrees in Applied Mathematics and Informatics from ITMO University, Saint Petersburg (2012–2018).</p><p style="margin:0;font-size:16px">My master's thesis described a proof-of-stake cryptocurrency over a simple local key-value store and explored how delegation and stake-based voting could emerge from the underlying model rather than being added as separate protocol features.</p></div>
+</section>
+</sc-if>
+
+<sc-if value="{{ isAbout }}" hint-placeholder-val="{{ false }}">
+<section data-screen-label="About" class="two" style="display:flex;flex-wrap:wrap;gap:36px clamp(32px,6vw,80px);align-items:flex-start;padding:8vh 0 10vh">
+<figure style="margin:0;min-width:0;flex:1 1 280px;max-width:400px"><img src="assets/george-lake.jpg" alt="George sitting by a mountain lake in Andorra" style="width:100%;aspect-ratio:3/4;object-fit:cover;object-position:50% 45%;border-radius:3px;filter:{{ photoFilter }}"><figcaption style="margin-top:10px;font:400 13px/1.5 'IBM Plex Mono',monospace;color:#5a656d">Estany d'Engolasters, Andorra</figcaption></figure>
+<div style="flex:1 1 380px;min-width:0;max-width:38em">
+<h1 style="font:300 clamp(32px,4.2vw,50px)/1.1 'Newsreader',serif;letter-spacing:-.02em">About</h1>
+<p style="margin-top:20px;font-size:18px">I live in Andorra, in the Pyrenees, with my family. Most weeks end on a trail, and a good part of the thinking on these pages happened at two thousand metres.</p>
+<p>Off the trail I listen to a lot of classical music, run, read slowly (Proust mostly, and the modernists around him), am learning Catalan, and read more financial engineering than an engineer strictly needs to.</p>
+<h2 style="font:400 13px/1 'IBM Plex Mono',monospace;color:#5a656d;letter-spacing:.04em;margin-top:36px;padding-top:12px;border-top:1px solid #1e252b">ELSEWHERE</h2>
+<div style="margin-top:12px;font:400 15px/1.8 'IBM Plex Mono',monospace;display:grid;grid-template-columns:minmax(7ch,9ch) minmax(0,1fr);gap:2px 20px">
+<span style="color:#5a656d">email</span><a href="mailto:george.agapov@gmail.com" style="border:0;min-width:0;overflow-wrap:anywhere">george.agapov@gmail.com</a>
+<span style="color:#5a656d">yak</span><a href="https://yak.ad" style="border:0">yak.ad</a>
+<span style="color:#5a656d">github</span><a href="https://github.com/georgeee" style="border:0">github.com/georgeee</a>
+<span style="color:#5a656d">linkedin</span><a href="https://www.linkedin.com/in/george-agapov-04817b83/" style="border:0;min-width:0;overflow-wrap:anywhere">linkedin.com/in/george-agapov</a>
+</div>
+<p style="margin:14px 0 0;font:400 13px/1.8 'IBM Plex Mono',monospace;color:#5a656d">Also on <a href="https://x.com/just_georgeee" style="color:#5a656d;border-bottom-color:#cfd6d8" style-hover="color:#1f7686">X</a> and <a href="https://t.me/george_agapov" style="color:#5a656d;border-bottom-color:#cfd6d8" style-hover="color:#1f7686">Telegram</a>.</p>
+</div>
+</section>
+</sc-if>
+
+</main>
+
+<footer class="ftr" style="width:100%;max-width:1080px;box-sizing:border-box;margin:0 auto;padding:24px min(6vw,64px) 36px;border-top:1px solid #cfd6d8;display:flex;justify-content:space-between;gap:12px 28px;flex-wrap:wrap;font:400 14px/1.7 'IBM Plex Mono',monospace;color:#5a656d">
+<span>georgeee.com · 2026</span>
+<span style="display:flex;gap:12px 22px;flex-wrap:wrap"><a href="mailto:george.agapov@gmail.com" style="border:0;color:#5a656d" style-hover="color:#1f7686">email</a><a href="https://github.com/georgeee" style="border:0;color:#5a656d" style-hover="color:#1f7686">github</a><a href="https://www.linkedin.com/in/george-agapov-04817b83/" style="border:0;color:#5a656d" style-hover="color:#1f7686">linkedin</a><a href="https://yak.ad" style="border:0;color:#5a656d" style-hover="color:#1f7686">yak.ad</a></span>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;photoTone&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;color&quot;,&quot;options&quot;:[&quot;color&quot;,&quot;muted&quot;,&quot;mono&quot;],&quot;tsType&quot;:&quot;'color'|'muted'|'mono'&quot;,&quot;label&quot;:&quot;Photo treatment&quot;,&quot;section&quot;:&quot;Photos&quot;},&quot;showThinking&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;label&quot;:&quot;“What I'm thinking about” section on the home page&quot;,&quot;section&quot;:&quot;Content&quot;}}">
+class Component extends DCLogic {
+  state = { page: 'home' };
+  pages = ['home','work','about'];
+  componentDidMount() {
+    const fromHash = () => { const h = (location.hash || '').replace('#',''); const page = this.pages.includes(h) ? h : 'home'; this.setState({ page }); };
+    fromHash(); this._onHash = fromHash;
+    window.addEventListener('hashchange', fromHash);
+    window.addEventListener('popstate', fromHash);
+  }
+  componentWillUnmount() { window.removeEventListener('hashchange', this._onHash); window.removeEventListener('popstate', this._onHash); }
+  go(page) {
+    return (e) => {
+      if (e && e.preventDefault) e.preventDefault();
+      if (page !== this.state.page) { try { history.pushState(null, '', '#' + page); } catch (_) {} }
+      this.setState({ page }); window.scrollTo(0, 0);
+    };
+  }
+  renderVals() {
+    const p = this.state.page;
+    const tone = this.props.photoTone ?? 'color';
+    return {
+      isHome: p === 'home', isWork: p === 'work', isAbout: p === 'about',
+      goHome: this.go('home'), goWork: this.go('work'), goAbout: this.go('about'),
+      workCurrent: p === 'work' ? 'page' : undefined, aboutCurrent: p === 'about' ? 'page' : undefined,
+      photoFilter: tone === 'mono' ? 'grayscale(1) contrast(1.05)' : tone === 'muted' ? 'saturate(.72) contrast(1.02)' : 'none',
+      showThinking: this.props.showThinking ?? true,
+    };
+  }
+}
+</script>
+</body>
+</html>
