@@ -38,21 +38,17 @@
       "hash": "home",
       "route": "/",
       "hashRedirect": true,
-      "title": "George Agapov — Technical architect and engineering leader",
-      "description": "George Agapov is a technical architect and engineering leader based in Andorra, working on distributed systems, high-assurance software, AI-assisted engineering and independent products and research through Yak Software.",
+      "title": "George Agapov — Fractional CTO and technical architect",
+      "description": "George Agapov is a fractional CTO and technical architect in Andorra, working on protocols, small language models, formal verification and agentic coding through Yak, his product studio.",
       "jsonLd": {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "George Agapov",
         "url": "https://georgeee.com/",
         "image": "https://georgeee.com/assets/og-georgeee.jpg",
-        "jobTitle": "Technical architect and engineering leader",
-        "email": "mailto:george.agapov@gmail.com",
+        "jobTitle": "Fractional CTO and technical architect",
+        "email": "mailto:george@yak.ad",
         "worksFor": [
-          {
-            "@type": "Organization",
-            "name": "o1Labs"
-          },
           {
             "@type": "Organization",
             "name": "Yak Software",
@@ -75,7 +71,7 @@
       "hash": "work",
       "route": "/work",
       "title": "Work — George Agapov",
-      "description": "Selected work, most recent first: technical architecture at o1Labs and five years on the Mina protocol, the Molt Petit consensus protocol, Yak Software, StakerBridge, Tezos tooling, Cardano SL and teaching — the longer arc behind georgeee.com."
+      "description": "Selected work, most recent first: Yak and its products, the Molt Petit consensus protocol, five years on the Mina protocol at o1Labs, StakerBridge, Tezos tooling, Cardano SL and teaching, with a CV in PDF."
     },
     {
       "hash": "about",
